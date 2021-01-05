@@ -105,10 +105,9 @@ lidar.data = (C_li @ lidar.data.T).T + t_i_li
 # We set the values here.
 ################################################################################################
 var_imu_f = 0.1
-var_imu_w = 0.001
+var_imu_w = 1
 var_gnss  = 0.01
-var_lidar = 0.1
-
+var_lidar = 10
 ################################################################################################
 # We can also set up some constants that won't change for any iteration of our solver.
 ################################################################################################
