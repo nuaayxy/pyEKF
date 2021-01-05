@@ -85,6 +85,12 @@ C_li = np.array([
       [ 0.04992,  0.99763, -0.04742],
       [-0.04998,  0.04992,  0.9975 ]
  ])
+    
+C_li = np.array([
+    [ 0.99376, -0.09722,  0.05466],
+    [ 0.09971,  0.99401, -0.04475],
+    [-0.04998,  0.04992,  0.9975 ]
+])
 
 t_i_li = np.array([0.5, 0.1, 0.5])
 
@@ -101,7 +107,7 @@ lidar.data = (C_li @ lidar.data.T).T + t_i_li
 var_imu_f = 0.1
 var_imu_w = 0.001
 var_gnss  = 0.01
-var_lidar = 100
+var_lidar = 0.1
 
 ################################################################################################
 # We can also set up some constants that won't change for any iteration of our solver.
